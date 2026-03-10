@@ -1,0 +1,122 @@
+.gamesContainer {
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px 12px;
+  align-items: start;
+}
+
+.encabezadoContainer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.encabezadoContainer h1 {
+  text-transform: uppercase;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.filterPlatformsContainer,
+.filterGenresContainer,
+.filterByOrderContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filterPlatformsContainer input,
+.filterPlatformsContainer select,
+.filterGenresContainer input,
+.filterGenresContainer select,
+.filterByOrderContainer input,
+.filterByOrderContainer select {
+  width: 100%;
+  padding: 10px 40px 10px 12px;
+  background-color: #2b3340;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.btnFilter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.btnFilter button {
+  background: linear-gradient(135deg, #1f2a3d, #24344f);
+  border: 1px solid #39d9e6;
+  color: #ffffff;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 40px 0 20px;
+  flex-wrap: wrap;
+}
+
+.pagination a {
+  text-decoration: none;
+}
+
+.pagination button,
+.ellipsis {
+  height: 42px;
+  min-width: 40px;
+  padding: 0 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(6px);
+}
+
+.pagination button:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+.active {
+  background: #39d9e6 !important;
+  color: #0b1220 !important;
+  border-color: transparent !important;
+  font-weight: 700;
+}
+
+.ellipsis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  user-select: none;
+  padding: 0 10px;
+  min-width: 42px;
+}
+
+.navButton {
+  min-width: 90px !important;
+  padding: 0 16px !important;
+}
