@@ -1,0 +1,6 @@
+Estoy haciendo una web enfocada a reseñas de videojuegos, el stack tecnologico que tengo en mente es:
+
+Front: React Next.js con cssmodules.
+Back: ASP.net
+BBDD: Microsoft SQL Server
+Storage: Cloudinary
